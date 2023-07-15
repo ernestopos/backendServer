@@ -1,0 +1,23 @@
+{
+  "name": "04-backend-server",
+  "version": "1.0.0",
+  "description": "backend server para manejar las peticiones tipo HTTP",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Peerkals",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.14.3",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.0",
+    "uuid": "^9.0.0"
+  }
+}
