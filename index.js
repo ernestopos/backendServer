@@ -5,6 +5,10 @@ const app = express();
 const cors = require('cors');
 // use the cors middleware
 app.use(cors());
+
+// Dar visibilidad a la carpeta pública.
+app.use(express.static('public'));
+
 // use the read and parse boody
 app.use(express.json());
 
