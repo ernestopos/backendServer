@@ -1,5 +1,6 @@
 const Usuario = require('../models/usuario');
 const bcryptjs = require('bcryptjs');
+const { generarJWT } = require('../helpers/jwt');
 
 //Método para obtener datos de un usuario
 const getUsuarios = async (req, res) => {
@@ -31,11 +32,14 @@ const crearUsuarios = async (req, res) => {
         usuario.password = bcryptjs.hashSync(password, salt);
 
         // se guarda la constraseña encriptada
-        await usuario.save();        
+        
+        const token = await generarJWT(usuario.id);      
+        await usuario.save();
 
         res.status(200).json({
             ok: true,
-            usuario
+            usuario,
+            token
         });
 
     } catch (error) {
