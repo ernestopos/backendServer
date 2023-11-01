@@ -1,0 +1,8 @@
+OAuth
+* Nombre: Saahara2cKey
+* Tipo Aplicación: Aplicación Web
+* URL 1: http://localhost
+* URL 2: http://localhost:3000
+
+ID de cliente = 1081242929823-q05rlg4m97gdhpsbevsnhso08ud3teqi.apps.googleusercontent.com
+Secreto del cliente = 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

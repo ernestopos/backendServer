@@ -1,2 +1,6 @@
-# backendServer
-Repositorio para el manejo del Backend Server
+# LADEE BACKEN SERVER
+Recuerden ejecutar 
+.....
+
+npm install
+......
